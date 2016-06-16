@@ -19,6 +19,8 @@ Prototype:
 Int[][] ZeroPass(int[][] inputMatrix)
 */
 
+// https://leetcode.com/problems/set-matrix-zeroes/
+
 #include<iostream>
 using namespace std;
 #include<vector>
@@ -48,19 +50,24 @@ vector<vector<int> > ZeroPass(vector<vector<int> > arr)
 			}
 		}
 
+	// print(row,n);
+	// cout<< endl;
+	// print(column,m);
 
 	for(int i =0;i<n;i++)
-		{if(row[i]==1)
-				{
+		{    
+			if(row[i]==1)
+				{   
 					for(int j =0;j<m;j++)
 						arr[i][j] = 0;
 				}
 			
+			
 		}
-
-	for(int i =0;i<n;i++)
+		
+	for(int i =0;i<m;i++)
 		if(column[i]==1)
-				for(int j =0;j<m;j++)
+				for(int j =0;j<n;j++)
 					arr[j][i] = 0;
 
 return arr;
