@@ -4,7 +4,7 @@
 using namespace std;
 #include<vector>
 
-int  greaternum( std::vector<int> v , int index)
+int  greaternum( std::vector<int> v )
 {
 	int ans = 0 , n = v.size();
 	int fact[n] ; fact[1] = 1;
@@ -56,7 +56,7 @@ int main()
 	arr = reverse(arr);
 	for(int i = 0 ; i<arr.size();i++)
 		cout<< arr[i] << " ";
- 	int ans = greaternum(arr,0);
+ 	int ans = greaternum(arr);
 
  	cout<<" Number of numbers greater than number is :  " << ans << endl;
 }
