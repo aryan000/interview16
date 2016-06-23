@@ -1,0 +1,4 @@
+#todo 
+
+1) Palindrome 
+2) hello -> hel*lo

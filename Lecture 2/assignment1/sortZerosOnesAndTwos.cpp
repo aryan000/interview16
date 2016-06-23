@@ -33,7 +33,7 @@ void sortzerosandones(vector<int> &v)
 	while(i<k && j<k)
 	{
 
-		print(v);
+		// print(v);
 
 		while(v[i]==0)
 		{

@@ -23,7 +23,7 @@ bool issorted( int *arr, int n)
 
 	if(arr[0]>arr[1]) return false;
 
-	return (arr+1,n-1);
+	return issorted(arr+1,n-1);
 }
 
 int main()

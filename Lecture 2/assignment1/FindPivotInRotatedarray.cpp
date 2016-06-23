@@ -32,7 +32,7 @@ int rotated(vector<int> arr , int start , int end)
 
 	 
 
-	if(start<mid && arr[mid]<arr[mid-1]) // if mid is below the exactly p point
+	if(start<mid && arr[mid]<arr[mid-1]) // if mid is below the exactly p point on rhs
 		return mid-1;
 
 	if(arr[start]<=arr[mid])
