@@ -20,7 +20,7 @@ void find(int n, string str )
 		}
 	if(n<0) return;
 
-	char ch = char(n%10 +'a' -1);
+	char ch = char(n%10 +'a' -'1');
 	// cout<< " ch is : " << ch << endl;
 	find(n/10,ch+str);
 
