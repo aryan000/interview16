@@ -20,11 +20,12 @@ void find(int n, string str )
 		}
 	if(n<0) return;
 
-	char ch = char(n%10 +'a' -'1');
-	// cout<< " ch is : " << ch << endl;
+	char ch = char(n%10 +'a' -1);
 	find(n/10,ch+str);
 
+     
 	char ch1 = char(n%100  + 'a' - 1);
+	if(ch1>='a' && ch1<='z' && ch1!=ch)
 	find(n/100, ch1+str);
 	
 }
