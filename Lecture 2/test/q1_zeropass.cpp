@@ -32,8 +32,11 @@ vector<vector<int> > ZeroPass(vector<vector<int> > arr)
 	int n = arr.size();
 	int m = arr[0].size();
 
-	bool row[n] = {0};
-	bool column[m] = {0};
+		vector<bool> row(n,false);
+	vector<bool> column(m,false);
+	
+	// bool row[n] = {0};
+	// bool column[m] = {0};
 	// print(row,n);
 	// print(column,n);
 
