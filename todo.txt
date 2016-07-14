@@ -1,6 +1,5 @@
 Lecture 1 - queen_safe.cpp
-Lecture 2 : Next Palindrome.cpp
-	    hello -> hel*lo
+Lecture 2 : hello -> hel*lo
 Lecture 3 : Map Implementation.cpp
 Lecture 4 : minimumlensubstringwithallcharacter.cpp
 	    nparenthesis.cpp
@@ -9,4 +8,4 @@ Lecture 4 : minimumlensubstringwithallcharacter.cpp
 	   print_all_sorted_output.cpp
 Lecture 5 : #no_greater_than_input_with_repetetion
 	   Nqueens
-Lecture 6 : appendlastNtofirst
+

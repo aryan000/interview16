@@ -53,6 +53,7 @@ SQL Constraints :
 SQL Syntax
 ------------------------------------------------------------------
 
+select * from 
 1) SQL SELECT
 	
 	syntax : select column1 , column2 .... columnN from table_name;
