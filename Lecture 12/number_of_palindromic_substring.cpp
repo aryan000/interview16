@@ -5,7 +5,7 @@ using namespace std;
 int count_palin(string str, int i , int j)
 
 {
-	if(i>j)
+	if(i>=j)
 		return 0;
 
 	if(str[i]==str[j])

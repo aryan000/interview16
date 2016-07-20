@@ -53,7 +53,8 @@ int main()
 	arr.push_back(temp);
 	}
 
-	cout<< "Maximum sum of subarray is : " << max_sum_subarray2(arr );
+	// cout<< "Maximum sum of subarray is : " << max_sum_subarray2(arr );
+	cout<<  max_sum_subarray2(arr );
 
 
 }

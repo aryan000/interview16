@@ -137,7 +137,7 @@ btree * getLca(btree *root , int element1 , int element2 )
 int main()
 {	
 	int a , b;
-	cout<<"Enter first and second node data : ";
+	// cout<<"Enter first and second node data : ";
 	 cin>> a >> b;
 	btree * root = takeinput();
 	 

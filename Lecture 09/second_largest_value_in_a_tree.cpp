@@ -69,39 +69,59 @@ btree * takeinput()
 
 
 
-int find(btree*root , int n)
+int find(btree*root , btree *ans , int n)
 {
 	if(root==NULL)
 		return INT_MIN;
 
 	int diff = INT_MIN;
-	if(n>root->data)
-		diff =   n-root->data ;
+	if(n > root->data)
+		diff =   root->data ;
 
-	int ans1 = find(root->left,n);
-	int ans2 = find(root->right,n);
+	int ans1 = find(root->left,ans,n);
+	int ans2 = find(root->right,ans,n);
 
-	return max(diff,max(ans1,ans2));
+	if(n==root->data && root!=ans)
+		{  return root->data;}
+
+	// return min(diff,min(ans1,ans2));
+	return max(diff,max(ans1,ans2));	
 }
 
-int find_largest(btree*root)
+btree* find_largest(btree*root)
 {
 	if(root==NULL)
-		return INT_MIN;
+		return root;
 
-	int ans1 = find_largest(root->left);
-	int ans2 = find_largest(root->right);
+	btree* left = find_largest(root->left);
+	btree* right = find_largest(root->right);
 
-	return max(root->data,max(ans1,ans2));
+	btree * temp = NULL;
+	if(left && right)
+		{if(left->data > right ->data)
+			temp = left;
+		else temp = right;
+	}
+
+	else if(left)
+		 temp = left;
+	else if(right)
+		temp = right;
+	else if(!left && !right)
+		return root;
+	if(root->data > temp->data)
+		return root;
+	else return temp;
 }
 
 int main()
 {	
 	
 	btree * root = takeinput();
-	int ans = find_largest(root);
-	// cout<< ans << endl;
-	int temp= find(root,ans);
+	btree *ans = find_largest(root);
+
+	// cout<< ans->data << endl;
+	int temp= find(root,ans,ans->data);
 	cout<< temp<< endl;
 	
 

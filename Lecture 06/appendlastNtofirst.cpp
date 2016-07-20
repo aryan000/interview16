@@ -115,9 +115,9 @@ Node * append_last_n_to_first(Node *head , int n)
    fast->next = NULL;
 slow->next = head;
 
-cout<< count << endl;
-   print(head);
-   print(b);
+// cout<< count << endl;
+   // print(head);
+   // print(b);
 	return b;
 }
 

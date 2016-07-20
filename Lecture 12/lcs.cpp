@@ -70,7 +70,8 @@ int main()
 	int len = dplcs(s,t,ans, 0,0 , output); 
 
 
-	cout<< " THe lcs of the two string is :"<< ans << "  and length is : " << len << endl;
+	// cout<< " THe lcs of the two string is :"<< ans << "  and length is : " << len << endl;
+	cout<< len << endl;
 
 	
 return 0;
