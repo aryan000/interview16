@@ -106,9 +106,8 @@ int main()
 	char swap2[100];
 
 	gets(input);
-	cin>> swap1;
-	char ch;
-	cin>> swap2;
+	gets(swap1);
+	gets(swap2);
 
 	swapstring(input,swap1,swap2);
 
