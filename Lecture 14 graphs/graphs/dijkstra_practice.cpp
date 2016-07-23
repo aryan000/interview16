@@ -1,6 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/* THis algo works for bellmon ford and dijkshtra also */
+
+
+
 #define vi vector<int>
 #define vb vector<bool>
 #define vpi vector<pair<int,int> >
